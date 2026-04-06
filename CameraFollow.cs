@@ -13,7 +13,7 @@ public class CameraFollow : MonoBehaviour
         offset = transform.position - player.position;
     }
 
-    void LateUpdate()
+    void LateUpdate() //Atualiza a posição no final do frame
     {
         transform.position = player.position + offset;
     }
